@@ -21,10 +21,12 @@ const Forecast = () => {
         })
         .catch(err => {
             console.error(err);
-
+            
         .then(response => response.json())
         .then(response => {
-           setResponseObj(response)
+                setResponseObj(response)
+            })
+
         });
    
    // add weather data for fetch function here above this
