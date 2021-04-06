@@ -1,9 +1,9 @@
-import React from 'react' ;
+import React, {useState} from 'react' ;
 
 /* adding OpenWeather API to file */
 
 const Forecast = () => {
-
+    let [responseObj, setResponseObj] = useState({});
     function getForecast() {
 
         fetch("https://community-open-weather-map.p.rapidapi.com/weather?q=New%20York", {
