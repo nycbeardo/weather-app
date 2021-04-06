@@ -6,11 +6,11 @@ const Forecast = () => {
 
     function getForecast() {
 
-    // add weather data fetch function
+    // add weather data fetch function here
     }
 
     return (
-        // JSX goes here
+        // JSX code goes here
 
     )
 }
