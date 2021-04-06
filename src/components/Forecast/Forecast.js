@@ -6,7 +6,7 @@ const Forecast = () => {
 
     function getForecast() {
 
-    // add weather data fetch  function
+    // add weather data fetch function
     }
 
     return (
