@@ -20,7 +20,7 @@ const Forecast = () => {
             console.error(err);
         });
    
-   // add weather data fetch function here
+   // add weather data fetch function here above this
    
     }
 
@@ -30,11 +30,11 @@ const Forecast = () => {
         <h2>Find current weather conditions for the city:</h2>
         <div>
         {JSON.stringify(responseObj)}
-        
-        </div>
+         </div>
         <button onClick={getForecast}>Get Forecast</button>
         </div>
-        // JSX code goes here
+
+        // JSX code goes there above this 
 
     )
 }
