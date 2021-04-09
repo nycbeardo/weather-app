@@ -16,20 +16,16 @@ const Forecast = () => {
                 "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com"
             }
         })
-        .then(response => {
-            console.log(response);
-        })
-        .catch(err => {
-            console.error(err);
+        .then(response => response.json())
+        .then(response => {setResponseObj(response) ;
+        
+        
 
        
 
         });
 
-        .then(response => response.json())
-        .then(response => {setResponseObj(response) ;
-        
-        });
+       
    
    // add weather data for fetch function here above this
 
