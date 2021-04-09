@@ -1,4 +1,5 @@
 import React, {useState} from 'react' ;
+import Conditions from '../Conditions/Conditions';
 
 /* adding OpenWeather API to file */
 
@@ -27,7 +28,7 @@ const Forecast = () => {
 
        
    
-   // add weather data for fetch function here above this
+   // add weather data for fetch function here above this line
 
    
    
@@ -38,14 +39,14 @@ const Forecast = () => {
     return (
 
         <div>
-        <h2>Find current weather conditions for the city:</h2>
-        <div>
-        {JSON.stringify(responseObj)}
-         </div>
-        <button onClick={getForecast}>Get Forecast</button>
-        </div>
+           <h2>Find Current Weather Conditions</h2>
+           <button onClick={getForecast}>Get Forecast</button>
+           <Conditions
+               responseObj={responseObj}
+               />
+       </div> 
 
-        // JSX code goes there above this 
+        // JSX code goes there above this line 
 
     )
 }
