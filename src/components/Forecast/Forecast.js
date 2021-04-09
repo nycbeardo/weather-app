@@ -1,4 +1,4 @@
-import React, {useState} from 'react' ;
+import React, { useState } from 'react' ;
 import Conditions from '../Conditions/Conditions';
 
 /* adding OpenWeather API to file */
@@ -7,7 +7,7 @@ const Forecast = () => {
 
     
 
-    let [city, setCity] = useState('');
+    let [city, setCity] = useState(' ');
     let [unit, setUnit] = useState('imperial');
     let [responseObj, setResponseObj] = useState({});  //declared responseObj on this line
 
@@ -18,6 +18,8 @@ const uriEncodedCity = encodeURIComponent(city);
 
 
     function getForecast(e) {
+
+        e.preventDefault();
 
         fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=${unit}&q=${uriEncodedCity}`, {
             "method": "GET",
@@ -30,7 +32,7 @@ const uriEncodedCity = encodeURIComponent(city);
         .then(response => {setResponseObj(response) ;
         
         
-             e.preventDefault();
+        
 
        
 
@@ -83,10 +85,12 @@ const uriEncodedCity = encodeURIComponent(city);
            <button type="submit"> Get Forecast </button>
 
        </form>
+
            <Conditions
                responseObj={responseObj}
                />
-       </div> 
+
+       </div>
 
         // JSX code goes there above this line 
 
