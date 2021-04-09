@@ -39,9 +39,7 @@ const uriEncodedCity = encodeURIComponent(city);
         });
         
         
-      
-   
-   // add weather data for fetch function here above this line
+      // add weather data for fetch function here above this line
 
    
    
