@@ -25,12 +25,19 @@ const Forecast = () => {
        
 
         });
+
+        .then(response => response.json())
+        .then(response => {setResponseObj(response) ;
+        
+        });
    
    // add weather data for fetch function here above this
 
    
    
     }
+
+
 
     return (
 
