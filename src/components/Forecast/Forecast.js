@@ -1,6 +1,7 @@
 import React, { useState } from 'react' ;
 import Conditions from '../Conditions/Conditions';
 import classes from './Forecast.module.css';
+import classes from './Conditions.module.css';
 
 
 /* adding OpenWeather API to file */
@@ -51,7 +52,7 @@ const uriEncodedCity = encodeURIComponent(city);
 
     return (
 
-        <div>
+        <div className={classes.Wrapper}>
            <h2>Find Current Weather Conditions</h2>
            <form onSubmit={getForecast}>
            <input
