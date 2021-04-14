@@ -1,5 +1,7 @@
 import React, { useState } from 'react' ;
 import Conditions from '../Conditions/Conditions';
+import classes from './Forecast.module.css';
+
 
 /* adding OpenWeather API to file */
 
@@ -56,6 +58,7 @@ const uriEncodedCity = encodeURIComponent(city);
                type="text"
                placeholder="Enter City"
                maxLength="50"
+               className={classes.textInput}
                value={city}
                onChange={(e) => setCity(e.target.value)}
                />
@@ -65,6 +68,7 @@ const uriEncodedCity = encodeURIComponent(city);
                    name="units"
                    checked={unit === "imperial"}
                    value="imperial"
+                   className={classes.Radio}
                    onChange={(e) => setUnit(e.target.value)}
                    />
                Fahrenheit
@@ -75,12 +79,13 @@ const uriEncodedCity = encodeURIComponent(city);
                    name="units"
                    checked={unit === "metric"}
                    value="metric"
+                   className={classes.Radio}
                    onChange={(e) => setUnit(e.target.value)}
                    />
                Celcius
            </label>
 
-           <button type="submit"> Get Forecast </button>
+           <button className={classes.Button} type="submit"> Get Forecast </button>
 
        </form>
 
