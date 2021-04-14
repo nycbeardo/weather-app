@@ -102,7 +102,9 @@ function getForecast(e) {
        </form>
 
            <Conditions
-               responseObj={responseObj}
+           responseObj={responseObj}
+           error={error} //new
+           loading={loading} //new
                />
 
        </div>
