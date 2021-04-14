@@ -1,7 +1,8 @@
 import React, { useState } from 'react' ;
 import Conditions from '../Conditions/Conditions';
-import classes from './Forecast.module.css';
-import classes from './Conditions.module.css';
+import classes from './Forecast.module.css' ;
+
+
 
 
 /* adding OpenWeather API to file */
@@ -13,6 +14,9 @@ const Forecast = () => {
     let [city, setCity] = useState(' ');
     let [unit, setUnit] = useState('imperial');
     let [responseObj, setResponseObj] = useState({});  //declared responseObj on this line
+    let [error, setError] = useState(false);
+   let [loading, setLoading] = useState(false);
+
 
 
 const uriEncodedCity = encodeURIComponent(city);
@@ -21,8 +25,11 @@ const uriEncodedCity = encodeURIComponent(city);
 
 
     function getForecast(e) {
-
         e.preventDefault();
+
+        if (city.length === 0) {
+            return setError(true);
+        }
 
         fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=${unit}&q=${uriEncodedCity}`, {
             "method": "GET",
@@ -52,7 +59,7 @@ const uriEncodedCity = encodeURIComponent(city);
 
     return (
 
-        <div className={classes.Wrapper}>
+        <div>
            <h2>Find Current Weather Conditions</h2>
            <form onSubmit={getForecast}>
            <input
@@ -87,6 +94,7 @@ const uriEncodedCity = encodeURIComponent(city);
            </label>
 
            <button className={classes.Button} type="submit"> Get Forecast </button>
+
 
        </form>
 
