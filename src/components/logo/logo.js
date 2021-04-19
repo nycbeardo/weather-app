@@ -1,6 +1,6 @@
 import React from 'react';
-import classess from ".logo/logo.module.css"
-import classes from '.logo/logo.module.css';
+import classes from "./Logo.module.css"
+
 
 const logo = () => (
     <div className={classes.sky}>
