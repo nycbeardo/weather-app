@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Tailwind Weather App
+
+## Modified version of a previous app
+
+Created using Create React App (intsructions below)
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
