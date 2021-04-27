@@ -14,7 +14,7 @@ function App() {
         <Forecast />
       </main>
       <footer>
-        Page created by Montique Stevens
+        Page created by "your name goes here" 
       </footer>
     </div>
   );
