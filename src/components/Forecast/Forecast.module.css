@@ -1,5 +1,14 @@
+.div#form {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: 5px solid #FFFF00;
+    padding: 10px;
+}
 .TextInput {
     font-size: large;
+    margin: 0 auto;
+
     border: 1px solid #EEEEEE;
     padding: 5px;
     border-radius: 3px;
@@ -7,26 +16,33 @@
     margin: 5px auto;
 
 }
-
 .TextInput :focus {
     outline: none;
     border-color: #719ECE;
     box-shadow: 0 0 10px rgb(50, 100, 153);
+}
 
+.h2 {
+    color: white;
 }
 
 .Radio {
     font-size: small;
+    color: white;
+   display: block;
+    margin: 0 auto;
 }
 .Button {
     display: block;
-    margin: 10px auto;
+    margin: 0px auto;
     padding: .5rem;
     font-size: 1em;
-    background: darkcyan;
-    border-radius: 5px;
+    background: rgb(96, 107, 141);
+    border-radius: 10px;
     color: white;
     cursor: pointer;
     margin: 5px auto;
 }
- 
+.Input {
+    margin: 0 auto;
+}

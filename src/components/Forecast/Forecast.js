@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Conditions from '../Conditions/Conditions';
 import classes from './Forecast.module.css';
 
+
 const Forecast = () => {
 
     let [city, setCity] = useState('');
@@ -51,10 +52,10 @@ function getForecast(e) {
 }
 
     return (
-        <div>
-            <h2>Find Current Weather Conditions</h2>
+        <div className=" ">
+            <h2 className="font-normal flex justify-center items-center text-white ">Find Current Weather Conditions</h2>
             <form onSubmit={getForecast}>
-                <input
+                <input 
                     type="text"
                     placeholder="Enter City"
                     maxLength="50"
