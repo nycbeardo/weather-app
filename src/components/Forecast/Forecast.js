@@ -54,7 +54,8 @@ function getForecast(e) {
     return (
         <div className=" ">
             <h2 className="font-normal flex justify-center items-center text-white ">Find Current Weather Conditions</h2>
-            <form onSubmit={getForecast}>
+            <br/>
+            <form className="jusify-center iterm-center" onSubmit={getForecast}>
                 <input 
                     type="text"
                     placeholder="Enter City"
@@ -83,8 +84,8 @@ function getForecast(e) {
                         />
                     Celcius
                 </label>
-
                 <button className={classes.Button} type="submit">Get Forecast</button>
+            
             </form>
             <Conditions
                responseObj={responseObj}
