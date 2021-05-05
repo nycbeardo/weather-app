@@ -16,3 +16,5 @@ const conditions = (props) => {
    )
 }
 export default conditions;
+
+//can use vanilla CSS for p tags
