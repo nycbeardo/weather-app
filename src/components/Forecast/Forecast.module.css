@@ -1,11 +1,7 @@
 /*certain elements seen below are styled in plain CSS, others in Tailwind via Forecast.js*/
 
 .div#form {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    border: 5px solid #FFFF00;
-    padding: 10px;
+ 
 }
 .TextInput {
     font-size: large;
