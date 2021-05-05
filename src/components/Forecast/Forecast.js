@@ -51,9 +51,11 @@ function getForecast(e) {
     });
 }
 
+
+//certain elements seen below are styled in plain CSS, others in Tailwind
     return (
         <div className=" ">
-            <h2 className="font-normal flex justify-center items-center text-white ">Find Current Weather Conditions</h2>
+            <h2 className="font-normal flex justify-center items-center text-white text-sm ">Find Current Weather Conditions</h2>
             <br/>
             <form className="jusify-center iterm-center" onSubmit={getForecast}>
                 <input 
@@ -84,6 +86,8 @@ function getForecast(e) {
                         />
                     Celcius
                 </label>
+                <br/>
+                <br/>
                 <button className={classes.Button} type="submit">Get Forecast</button>
             
             </form>

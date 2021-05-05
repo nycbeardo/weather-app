@@ -7,8 +7,8 @@ const conditions = (props) => {
            {props.loading && <div className={classes.Loader} />}
            {props.responseObj.cod === 200 ?
                <div>
-                   <p><strong>{props.responseObj.name}</strong></p>
-                   <p>It is currently {Math.round(props.responseObj.main.temp)} degrees out with {props.responseObj.weather[0].description}.</p>
+                   <p className="text-white text-sm flex justify-center items-center"><strong>{props.responseObj.name}</strong></p>
+                   <p className="text-white text-sm  flex justify-center items-center">It is currently {Math.round(props.responseObj.main.temp)} degrees out with {props.responseObj.weather[0].description}.</p>
                </div>
            : null
            }

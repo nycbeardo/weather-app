@@ -1,3 +1,5 @@
+/*certain elements seen below are styled in plain CSS, others in Tailwind via Forecast.js*/
+
 .div#form {
     position: absolute;
     top: 50%;
@@ -29,7 +31,7 @@
 .Radio {
     font-size: small;
     color: white;
-    margin: 0 auto;
+    margin:  auto;
 }
 .Button {
     display: block;
