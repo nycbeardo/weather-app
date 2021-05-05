@@ -38,11 +38,13 @@
     margin: 0px auto;
     padding: .5rem;
     font-size: 1em;
-    background: rgb(96, 107, 141);
+    background:   #D5A021   ;  /*#ECBA82; */
     border-radius: 10px;
-    color: white;
+    color: black;
+    font-weight: bold;
     cursor: pointer;
     margin: 5px auto;
+    box-shadow: 2px 2px
 }
 .Input {
     margin: 0 auto;
