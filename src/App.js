@@ -1,6 +1,6 @@
 import React from 'react';
 import Forecast from "./components/Forecast/Forecast";
-import Logo from './components/Logo/Logo';
+import Logo from ''./components/Logo/Logo";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Logo className=" " />
         <h1 className="font-bold text-white flex justify-center items-center ">React Weather App</h1>
       </header>
-      
+
       <main>
         <Forecast />
       </main>
