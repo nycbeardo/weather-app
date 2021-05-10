@@ -8,7 +8,7 @@ function App() {
     <div className="bg-green-700  shadow-2xl rounded-lg border-solid border-4 border-green-800 ">
       <header className="App-header">
         <Logo className=" " />
-        <h1 className="font-bold text-white flex justify-center items-center ">React Weather App</h1>
+        <h1 className="font-bold text-white flex justify-center items-center ">Tailwindcaster</h1>
       </header>
 
       <main>
