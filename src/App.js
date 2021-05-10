@@ -1,6 +1,6 @@
 import React from 'react';
 import Forecast from "./components/Forecast/Forecast";
-import Logo from './components/Logo/Logo';
+import Logo from './components/Logo/Logo.js';
 
 function App() {
   return (
