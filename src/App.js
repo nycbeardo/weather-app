@@ -1,11 +1,11 @@
 import React from 'react';
 import Forecast from "./components/Forecast/Forecast";
-import Logo from './components/Logo/Logo.js';
+import Logo from './components/logo/logo.js';
 
 function App() {
   return (
-    <div className="App  flex justify-center items-center bg-gray-100">
-    <div className="bg-green-700  shadow-2xl rounded-lg border-solid border-4 border-green-800 ">
+    <div className="App  flex justify-center items-center bg-indigo-950">
+    <div className="bg-indigo-950  shadow-2xl rounded-md border-solid border-4 border-gray-900">
       <header className="App-header">
         <Logo className=" " />
         <h1 className="font-bold text-white flex justify-center items-center ">Tailwindcaster</h1>
