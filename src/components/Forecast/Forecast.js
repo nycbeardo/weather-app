@@ -11,7 +11,7 @@ const Forecast = () => {
     let [error, setError] = useState(false);
     let [loading, setLoading] = useState(false);
     
-
+// access city data here, if true or false
 function getForecast(e) {
     e.preventDefault();
 
@@ -26,7 +26,7 @@ function getForecast(e) {
     setLoading(true);
     
     const uriEncodedCity = encodeURIComponent(city);
-
+// open weather map API is accessed here
     fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=${unit}&q=${uriEncodedCity}`, {
         "method": "GET",
         "headers": {

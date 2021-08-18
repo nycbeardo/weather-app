@@ -15,7 +15,7 @@ function App() {
         <Forecast />
       </main>
       <footer className="font-light text-white text-xs flex justify-center items-center">
-        Page created by "your name goes here" 
+     Page created by "your name goes here"
       </footer>
       </div>
     </div>
