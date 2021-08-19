@@ -25,22 +25,25 @@
 }
 
 .Radio {
-    font-size: small;
+    font-size: medium;
     color: white;
-    margin:  auto;
+    margin: 0 auto;
+    padding: 20px;
 }
 .Button {
     display: block;
     margin: 0px auto;
     padding: .5rem;
     font-size: 1em;
-    background:   #D5A021   ;  /*#ECBA82; */
-    border-radius: 10px;
-    color: black;
+    background:   #28223f  ;  /*#ECBA82; */
+    border-radius: 10px ;
+    border: 1px solid #D5A021;
+    color: rgb(255, 255, 255);
     font-weight: bold;
-    cursor: pointer;
+    
     margin: 5px auto;
-    box-shadow: 2px 2px
+    
+   box-shadow: 1px 1px #D5A021;
 }
 .Input {
     margin: 0 auto;

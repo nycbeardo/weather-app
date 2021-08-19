@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  
+  color: #b3b8cd;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #28223f;
@@ -10,6 +10,18 @@ body {
 
 code {
   font-family: Montserrat, sans-serif;
+}
+
+input {
+  
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+label {
+  margin: 0 auto;
 }
 
 @tailwind base;

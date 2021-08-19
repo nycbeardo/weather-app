@@ -19,7 +19,7 @@ function getForecast(e) {
         return setError(true);
     }
 
-    // Clear state in preparation for new data
+    // clear state in preparation for new data
     setError(false);
     setResponseObj({});
     
@@ -27,7 +27,10 @@ function getForecast(e) {
     
     const uriEncodedCity = encodeURIComponent(city);
 // open weather map API is accessed here
-    fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=${unit}&q=${uriEncodedCity}`, {
+    fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=${unit}&q=${uriEncodedCity}`, 
+
+    
+    {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
@@ -54,18 +57,19 @@ function getForecast(e) {
 
 //certain elements seen below are styled in plain CSS, others in Tailwind
     return (
-        <div className=" ">
+        <div className="">
             <h2 className="font-normal flex justify-center items-center text-white text-sm ">Find Current Weather Conditions</h2>
             <br/>
-            <form className="jusify-center iterm-center" onSubmit={getForecast}>
+            <form className="jusify-center items-center" onSubmit={getForecast}>
                 <input 
                     type="text"
                     placeholder="Enter City"
                     maxLength="50"
-                    className={classes.textInput}
+                    className={classes.textInput} jusify-center items-center
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                     />
+                    
                 <label className={classes.Radio}>
                     <input
                         type="radio"
@@ -74,8 +78,9 @@ function getForecast(e) {
                         value="imperial"
                         onChange={(e) => setUnit(e.target.value)}
                         />
-                    Fahrenheit
+                    °F
                 </label>
+                
                 <label className={classes.Radio}>
                     <input
                         type="radio"
@@ -84,7 +89,7 @@ function getForecast(e) {
                         value="metric"
                         onChange={(e) => setUnit(e.target.value)}
                         />
-                    Celcius
+                   °C
                 </label>
                 <br/>
                 <br/>
