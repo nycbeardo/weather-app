@@ -1,6 +1,6 @@
 # Tailwind Weather App
 
-A react app that shows you the current forecaste in the city you type in. 
+A react app that shows you the current forecast in the city you type in. 
 
 Interface designed using TailwindCSS 
 
